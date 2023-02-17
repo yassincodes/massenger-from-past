@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap");
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
-  
 }
 
 body {
-  font-family: 'Noto Sans Arabic', sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+  margin: 0;
 }
-
 
 .grid-main {
   display: grid;
@@ -40,6 +38,21 @@ body {
   font-size: 15px;
 }
 
+.massenger-logo {
+  box-shadow: -2px 4px 13px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 4px 13px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 4px 13px 0px rgba(0, 0, 0, 0.75);
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: -webkit-fill-available;
+  background: white;
+  font-family: "Noto Sans Arabic", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
 
 .send-area {
   background-color: white;
@@ -48,10 +61,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   position: sticky;
   z-index: 2000;
   bottom: 0;
+  box-shadow: -2px 4px 13px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 4px 13px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 4px 13px 0px rgba(0, 0, 0, 0.75);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: -webkit-fill-available;
 }
 
 .text-area {
@@ -63,33 +82,35 @@ body {
   font-size: 16px;
   width: 80%;
   outline: none;
-  box-shadow: 0 0 0 2px #E6EBF0;
+  box-shadow: 0 0 0 2px #e6ebf0;
   resize: none;
   overflow: auto;
+  width: 70vw;
 }
 
 .action-btn {
-  background-color: #4184F3;
+  background-color: white;
+  border: 2px solid #4184f3;
   color: white;
   border: none;
   border-radius: 50px;
   padding: 10px;
   font-size: 20px;
   cursor: pointer;
-  margin-top: 10px
+  margin-top: 10px;
+  height: 25px;
 }
 
-
 .result-text-container {
-  
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .result-text {
   font-size: 25px;
   line-height: 2.5rem;
-  background: #dcf8c6;
+  background: #9ab7f5;
   padding: 20px;
   border-radius: 20px;
+  margin-bottom: 110px;
 }
-
-
